@@ -1,82 +1,56 @@
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Centering the Table */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
+/* General table styling */
 table {
-    width: 100%;
+    width: 45%;
     border-collapse: collapse;
-    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 th, td {
-    border: 1px solid #000;
+    border: 1px solid black;
     padding: 10px;
     text-align: center;
-    font-size: 16px;
 }
 
+/* Header styling */
 .header {
     background-color: yellow;
-    font-size: 24px;
-    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.home {
-    background-color: pink;
-    vertical-align: middle;
+/* Styling for the days row */
+thead th {
+    background-color: yellow;
+    color: black;
+}
+
+/* Styling for the time column */
+tbody td:first-child {
+    background-color: lightgray;
     font-weight: bold;
 }
 
-/* Styling for small screens */
-@media only screen and (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    table {
-        border: none;
-    }
-
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    tr {
-        margin: 0 0 20px 0;
-        border: 1px solid #ccc;
-        padding: 10px;
-    }
-
-    td {
-        border: none;
-        border-bottom: 1px solid #ddd;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    td:before {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        font-weight: bold;
-    }
-
-    /* Content labels for each column in small screens */
-    td:nth-of-type(1):before { content: "Time"; }
-    td:nth-of-type(2):before { content: "Monday Dec. 15"; }
-    td:nth-of-type(3):before { content: "Tuesday Dec. 16"; }
-    td:nth-of-type(4):before { content: "Wednesday Dec. 17"; }
-    td:nth-of-type(5):before { content: "Thursday Dec. 18"; }
-
-    .home {
-        display: none;
-    }
+/* Home cell styling */
+.home {
+    background-color: pink;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle; 
+    border: 1px solid black;
+    width:30%;
 }
+
+/* Styling specific rows and columns */
+th, td {
+    text-align: center;
+    
+}
+
