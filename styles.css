@@ -1,0 +1,56 @@
+/* Centering the Table */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* General table styling */
+table {
+    width: 45%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Styling for the days row */
+thead th {
+    background-color: yellow;
+    color: black;
+}
+
+/* Styling for the time column */
+tbody td:first-child {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+/* Home cell styling */
+.home {
+    background-color: pink;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle; 
+    border: 1px solid black;
+    width:30%;
+}
+
+/* Styling specific rows and columns */
+th, td {
+    text-align: center;
+    
+}
+
