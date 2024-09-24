@@ -6,7 +6,7 @@ body{
     height: 100vh;
 }
 /* General table styling */
-table {
+ table {
     width: 45%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
@@ -20,37 +20,108 @@ th, td {
 }
 
 /* Header styling */
-.header {
+ .header {
     background-color: yellow;
     font-weight: bold;
     font-size: 1.2em;
 }
 
 /* Styling for the days row */
-thead th {
+ thead th {
     background-color: yellow;
     color: black;
-}
-
+} 
+ tbody tr:first-child{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+} 
 /* Styling for the time column */
-tbody td:first-child {
+ tbody td:first-child {
     background-color: lightgray;
     font-weight: bold;
-}
+} 
 
 /* Home cell styling */
-.home {
+ .home {
     background-color: pink;
     font-weight: bold;
     text-align: center;
     vertical-align: middle; 
-    border: 1px solid black;
+    border:1px  solid black;
     width:30%;
-}
+} 
 
 /* Styling specific rows and columns */
 th, td {
     text-align: center;
     
+} 
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    table {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    thead tr {
+        width: 100vw;
+        padding: 0 10px;
+    }
+
+    tbody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    tr {
+        margin: 0 0 20px 0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width:100%;
+        margin-bottom: 10px; /* Added for spacing */
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        text-align: left; /* Ensure proper label alignment */
+    }
+
+    /* Content labels for each column in small screens */
+    td:nth-of-type(1):before { content: "Time"; }
+    td:nth-of-type(2):before { content: "Dec. 15"; }
+    td:nth-of-type(3):before { content: " Dec. 16"; }
+    td:nth-of-type(4):before { content: "Dec. 17"; }
+    td:nth-of-type(5):before { content: " Dec. 18"; }
+
+    tbody tr:first-child {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
 }
 
