@@ -45,4 +45,4 @@ The project has been deployed using  Vercel. You can view the live project at th
 ### LinkedIn Post
 I have also shared this project on my LinkedIn profile. You can view the post here:
 
-**LinkedIn Post**:
+**LinkedIn Post**:https://www.linkedin.com/posts/jared-furtado_html-css-webdevelopment-activity-7244241872485777408-IqcI?utm_source=share&utm_medium=member_desktop
