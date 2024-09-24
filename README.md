@@ -40,9 +40,9 @@ After cloning the repository, open the index.html file in your preferred browser
 ### 3. Deployment Link
 The project has been deployed using  Vercel. You can view the live project at the following link:
 
-[**Live Demo**: https://html-table-assignment.vercel.app/ ]
+**Live Demo**: [https://html-table-assignment.vercel.app/ ]
     
 ### LinkedIn Post
 I have also shared this project on my LinkedIn profile. You can view the post here:
 
-[**LinkedIn Post**:https://www.linkedin.com/posts/jared-furtado_html-css-webdevelopment-activity-7244241872485777408-IqcI?utm_source=share&utm_medium=member_desktop]
+**LinkedIn Post**:[https://www.linkedin.com/posts/jared-furtado_html-css-webdevelopment-activity-7244241872485777408-IqcI?utm_source=share&utm_medium=member_desktop]
